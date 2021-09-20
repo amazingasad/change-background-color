@@ -1,0 +1,39 @@
+body{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: wheat;
+}
+input{
+    width: 50%;
+    margin: 20px;
+    height: 30px;
+}
+button{
+    background-color: rgba(255, 135, 92, 0.712);
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-size: large;
+    margin: 10px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+button:focus{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+footer{
+    text-align: center;
+    margin: 15px;
+    color: black;
+}
+footer img{
+    margin: 0px 5px;
+}
+footer img:hover{
+    transform: scale(0.7);
+    transition: transform 0.4s;
+}

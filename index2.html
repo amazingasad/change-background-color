@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        div{
+        height: 100vh;
+        width: 100vw;
+        }
+        footer{
+            margin-top: -550px;
+            padding: 0px;
+        }
+    </style>
+    <title>Background-Color-changer</title>
+</head>
+<body>
+    <h1>Just move your mouse get high .</h1>
+    <div id="background"></div>
+    <div class="source">
+        <h3>Get the source code from github .</h3>
+        <a href="https://github.com/amazingasad/change-background-color" target="_blank"><img src="icons/Github.svg" alt="Github Icon"></a>
+    </div>
+    <footer>
+        <h1>Follow me on</h1>
+        <a href="https://in-asad.com/facebook" target="_blank"><img src="icons/Facebook.svg" alt="Facebook Icon"></a>
+        <a href="https://in-asad.com/instagram" target="_blank"><img src="icons/Instagram.svg" alt="Instagram Icon"></a>
+        <a href="https://in-asad.com/youtube" target="_blank"><img src="icons/Youtube.svg" alt="Youtube Icon"></a>
+        <a href="https://in-asad.com/twitter" target="_blank"><img src="icons/Twitter.svg" alt="Twitter Icon"></a>
+        <a href="https://in-asad.com/github" target="_blank"><img src="icons/Github.svg" alt="Github Icon"></a>
+    </footer>
+    <script>
+        const colors = [
+        "AliceBlue",
+        "AntiqueWhite",
+        "Aqua",
+        "Aquamarine",
+        "Azure",
+        "Beige",
+        "Bisque",
+        "Black",
+        "BlanchedAlmond",
+        "Blue",
+        "BlueViolet",
+        "Brown",
+        "BurlyWood",
+        "CadetBlue",
+        "Chartreuse",
+        "Chocolate",
+        "Coral",
+        "CornflowerBlue",
+        "Cornsilk",
+        "Crimson",
+        "Cyan",
+        "DarkBlue",
+        "DarkCyan",
+        "DarkGoldenRod",
+        "DarkGray",
+        "DarkGrey",
+        "DarkGreen",
+        "DarkKhaki",
+        "DarkMagenta",
+        "DarkOliveGreen",
+        "DarkOrange",
+        "DarkOrchid",
+        "DarkRed",
+        "DarkSalmon",
+        "DarkSeaGreen",
+        "DarkSlateBlue",
+        "DarkSlateGray",
+        "DarkSlateGrey",
+        "DarkTurquoise",
+        "DarkViolet",
+        "DeepPink",
+        "DeepSkyBlue",
+        "DimGray",
+        "DimGrey",
+        "DodgerBlue",
+        "FireBrick",
+        "FloralWhite",
+        "ForestGreen",
+        "Fuchsia",
+        "Gainsboro",
+        "GhostWhite",
+        "Gold",
+        "GoldenRod",
+        "Gray",
+        "Grey",
+        "Green",
+        "GreenYellow",
+        "HoneyDew",
+        "HotPink",
+        "IndianRed",
+        "Indigo",
+        "Ivory",
+        "Khaki",
+        "Lavender",
+        "LavenderBlush",
+        "LawnGreen",
+        "LemonChiffon",
+        "LightBlue",
+        "LightCoral",
+        "LightCyan",
+        "LightGoldenRodYellow",
+        "LightGray",
+        "LightGrey",
+        "LightGreen",
+        "LightPink",
+        "LightSalmon",
+        "LightSeaGreen",
+        "LightSkyBlue",
+        "LightSlateGray",
+        "LightSlateGrey",
+        "LightSteelBlue",
+        "LightYellow",
+        "Lime",
+        "LimeGreen",
+        "Linen",
+        "Magenta",
+        "Maroon",
+        "MediumAquaMarine",
+        "MediumBlue",
+        "MediumOrchid",
+        "MediumPurple",
+        "MediumSeaGreen",
+        "MediumSlateBlue",
+        "MediumSpringGreen",
+        "MediumTurquoise",
+        "MediumVioletRed",
+        "MidnightBlue",
+        "MintCream",
+        "MistyRose",
+        "Moccasin",
+        "NavajoWhite",
+        "Navy",
+        "OldLace",
+        "Olive",
+        "OliveDrab",
+        "Orange",
+        "OrangeRed",
+        "Orchid",
+        "PaleGoldenRod",
+        "PaleGreen",
+        "PaleTurquoise",
+        "PaleVioletRed",
+        "PapayaWhip",
+        "PeachPuff",
+        "Peru",
+        "Pink",
+        "Plum",
+        "PowderBlue",
+        "Purple",
+        "RebeccaPurple",
+        "Red",
+        "RosyBrown",
+        "RoyalBlue",
+        "SaddleBrown",
+        "Salmon",
+        "SandyBrown",
+        "SeaGreen",
+        "SeaShell",
+        "Sienna",
+        "Silver",
+        "SkyBlue",
+        "SlateBlue",
+        "SlateGray",
+        "SlateGrey",
+        "Snow",
+        "SpringGreen",
+        "SteelBlue",
+        "Tan",
+        "Teal",
+        "Thistle",
+        "Tomato",
+        "Turquoise",
+        "Violet",
+        "Wheat",
+        "White",
+        "WhiteSmoke",
+        "Yellow",
+        "YellowGreen",
+    ];
+        let divBackground = document.getElementById("background");
+        function randomColor(){
+            let randomColorIndex = Math.random() * 146;
+            let colorIndex = Math.round(randomColorIndex);
+            let randomBackground = colors[colorIndex];
+            divBackground.style.backgroundColor = randomBackground;
+        }
+        divBackground.addEventListener("mousemove", function(){
+            randomColor();
+        })
+    </script>
+</body>
+</html>
