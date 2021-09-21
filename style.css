@@ -7,12 +7,16 @@ body{
 input{
     width: 50%;
     margin: 20px;
-    height: 30px;
+    height: 45px;
+}
+input:focus{
+    outline: none;
 }
 button{
     background-color: rgba(255, 135, 92, 0.712);
     color: white;
     border: none;
+    border-radius: 5px;
     padding: 10px 30px;
     font-size: large;
     margin: 10px;
@@ -25,15 +29,15 @@ button:focus{
     transform: scale(1.1);
     transition: transform 0.3s;
 }
-footer{
+footer, section{
     text-align: center;
     margin: 15px;
     color: black;
 }
-footer img{
-    margin: 0px 5px;
+footer img, section img{
+    margin: 0px 7px;
 }
-footer img:hover{
+a img:hover{
     transform: scale(0.7);
     transition: transform 0.4s;
 }
